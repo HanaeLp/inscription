@@ -1,0 +1,47 @@
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend { 
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+label {
+    width: 190px;
+    display: inline-flex;
+    margin: 10px;
+}
+
+em {
+    font-style: normal;
+    color: #f00;
+}
+
+input:focus {
+    background: #f7eded;
+}
+
+input {
+    width: 254px;
+}
+
+select {
+    width: 262px;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    
+}
+
+input[type=radio] {
+    width: 15px;
+    
+}
+
+input[type=submit] {
+
+}
