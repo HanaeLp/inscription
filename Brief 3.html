@@ -5,43 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="brief 3.js"></script>
     <title>Inscription</title>
 </head>
 <body>
     <form>
         <fieldset>
         <legend>INSCRIPTION</legend>
+        <h3 id="date"></h3>
             <label>Nom <em>*</em></label>
-                <input id="nom" type="text" placeholder="ZOUITI" autofocus="" required=""><br>
+                <input id="nom" type="text" placeholder="ZOUITI" autofocus=""> 
+                <label id="ern"></label><br>
            <label>Prénom <em>*</em></label>
-                <input id="prenom" type="text" placeholder="Hanae" autofocus="" required=""><br>
+                <input id="prenom" type="text" placeholder="Hanae" autofocus="">
+                <label id="erp"></label><br>
             <label>Date de naissance</label>
-                <input type="date" autofocus="" required="" ><br>
+                <input id="dateN" type="date" autofocus="">
+                <label id="erd"></label><br>
            <label>Code postal <em>*</em></label>
-                <input id="code" type="number" placeholder="" autofocus="" required=""><br>
+                <input id="code" type="number" placeholder="" autofocus="">
+                <label id="erC"></label><br>
             <label>Pays <em>*</em></label>
                 <select id="pays">
-                    <option value="safi">Safi</option>
-                    <option value="casablanca">Casablanca</option>
-                    <option value="rabat">Rabat</option>
+                    <option value="safi">Maroc</option>
+                    <option value="casablanca">USA</option>
+                    <option value="rabat">France</option>
                 </select><br>
-            <label>Genre <em>*</em></label>
-                <label><input id="genre" type="radio" placeholder="" autofocus="" required="">Masculin</label>
-                <label><input id="genre" type="radio" placeholder="" autofocus="" required="">Féménin</label><br>
+                <label>Genre <em>*</em></label>
+                <label><input type="radio" placeholder="" autofocus="" name="genre">Masculin</label>
+                <label><input type="radio" placeholder="" autofocus="" name="genre">Féménin</label><br>
             <label>Préférences de contact <em>*</em></label>
-                <label><input id="contact" type="checkbox" placeholder="" autofocus="" required="">Fax</label>
-                <label><input id="contact" type="checkbox" placeholder="" autofocus="" required="">Email</label>
-                <label><input id="contact" type="checkbox" placeholder="" autofocus="" required="">Téléphone</label><br>
+                <label><input type="checkbox" placeholder="" autofocus="">Fax</label>
+                <label><input type="checkbox" placeholder="" autofocus="">Email</label>
+                <label><input type="checkbox" placeholder="" autofocus="">Téléphone</label><br>
             <label>Email <em>*</em></label>
-                <input id="email" type="email" placeholder="XXXX@gmail.com" autofocus="" required=""><br>
+                <input id="email" type="email" placeholder="XXXX@gmail.com" autofocus="">
+                <label id="ere"></label><br>
             <label>Telephone</label>
-                 <input type="tel" placeholder="06XXXXXXXX" autofocus="" required=""><br>
+                 <input id="tel" type="tel" placeholder="06XXXXXXXX" autofocus="" >
+                 <label id="erT"></label><br>
             <label>Password <em>*</em></label>
-                <input id="pass" type="password" placeholder="(6-8 characters)" autofocus="" required=""><br>
+                <input id="pass" type="password" placeholder="(6-8 characters)" autofocus="" required="">
+                <label id="erpa"></label><br>
             <label>Vérification password <em>*</em></label>
-                <input id="verif" type="password" placeholder="" autofocus="" required=""><br>
-                <input type="submit" value="Envoyer">
-                <input type="submit" value="Effacer">
+                <input id="verif" type="password" placeholder="" autofocus="" required="">
+                <label id="erv"></label><br>
+            <input onclick="validation()" type="submit" value="Envoyer">
+            <input type="reset" value="Effacer">
         
         </fieldset>
     </form>
