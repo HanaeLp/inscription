@@ -9,7 +9,7 @@
     <title>Inscription</title>
 </head>
 <body>
-    <form>
+    <form id="T">
         <fieldset>
         <legend>INSCRIPTION</legend>
         <h3 id="date"></h3>
@@ -27,17 +27,20 @@
                 <label id="erC"></label><br>
             <label>Pays <em>*</em></label>
                 <select id="pays">
-                    <option value="safi">Maroc</option>
-                    <option value="casablanca">USA</option>
-                    <option value="rabat">France</option>
-                </select><br>
+                    <option value=""disabled selected>Sélectionnez le pays</option>
+                    <option value="maroc" >Maroc</option>
+                    <option value="USA">USA</option>
+                    <option value="france">France</option>
+                </select><label id="ery"></label><br>
                 <label>Genre <em>*</em></label>
                 <label><input type="radio" placeholder="" autofocus="" name="genre">Masculin</label>
-                <label><input type="radio" placeholder="" autofocus="" name="genre">Féménin</label><br>
+                <label><input type="radio" placeholder="" autofocus="" name="genre">Féménin</label>
+                <label id="erg"></label><br>
             <label>Préférences de contact <em>*</em></label>
-                <label><input type="checkbox" placeholder="" autofocus="">Fax</label>
-                <label><input type="checkbox" placeholder="" autofocus="">Email</label>
-                <label><input type="checkbox" placeholder="" autofocus="">Téléphone</label><br>
+                <label><input type="checkbox" placeholder="" autofocus="" name="contact">Fax</label>
+                <label><input type="checkbox" placeholder="" autofocus="" name="contact">Email</label>
+                <label><input type="checkbox" placeholder="" autofocus="" name="contact">Téléphone</label>
+                <label id="erco"></label><br>
             <label>Email <em>*</em></label>
                 <input id="email" type="email" placeholder="XXXX@gmail.com" autofocus="">
                 <label id="ere"></label><br>
@@ -50,7 +53,7 @@
             <label>Vérification password <em>*</em></label>
                 <input id="verif" type="password" placeholder="" autofocus="" required="">
                 <label id="erv"></label><br>
-            <input onclick="validation()" type="submit" value="Envoyer">
+            <input onclick="validation()" type="button" value="Envoyer">
             <input type="reset" value="Effacer">
         
         </fieldset>
